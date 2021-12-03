@@ -18,6 +18,7 @@ proc toSet*(str: string): set[char] =
     result.incl ch
 
 type Path = distinct string
+const Ex* = Path("example")
 
 template day*(path: Path, body: untyped, id: int = -1) =
   proc solve(file: string): array[1 .. 2, int] =
