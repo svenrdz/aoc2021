@@ -15,3 +15,9 @@ nake
 ```
 nake <day>
 ```
+
+### All days
+
+```
+nake all
+```
