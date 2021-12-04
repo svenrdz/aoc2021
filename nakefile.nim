@@ -14,6 +14,10 @@ proc runDay(day: int) =
 task defaultTask, "Run latest day":
   runDay(max(days))
 
+task "all", "Run all days":
+  for day in days:
+    runDay(day)
+
 macro makeDayTasks: untyped =
   result = newStmtList()
   for day in 1..25:
@@ -22,7 +26,3 @@ macro makeDayTasks: untyped =
         runDay(`day`)
 
 makeDayTasks()
-
-task "all", "Run all days":
-  for day in days:
-    runDay(day)

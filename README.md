@@ -12,8 +12,10 @@ nake <task>
 
 ```
 › nake --tasks
+
 Available tasks:
 default - Run latest day
+all - Run all days
 1 - Run day 1
 2 - Run day 2
 3 - Run day 3
@@ -39,5 +41,4 @@ default - Run latest day
 23 - Run day 23
 24 - Run day 24
 25 - Run day 25
-all - Run all days
 ```
