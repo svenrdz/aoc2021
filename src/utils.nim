@@ -4,6 +4,11 @@ import intsets
 import strutils
 import sequtils
 
+template `?`*[T](cond: bool, yes, no: T): T =
+  # x[T] = condition ? valueIfTrue[T] : valueIfFalse[T]
+  if cond: yes
+  else: no
+
 proc read*(filename: string): seq[string] =
   toSeq(filename.lines)
 
