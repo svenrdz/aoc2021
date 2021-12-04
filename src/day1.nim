@@ -5,10 +5,7 @@ proc sum(arr: openArray[int]): int =
     result += val
 
 proc isPositive(x: int): int =
-  if x > 0:
-    1
-  else:
-    0
+  x > 0 ? 1: 0
 
 proc grad(input: openArray[int], windowLen: int): seq[int] =
   var window, prev: seq[int]
