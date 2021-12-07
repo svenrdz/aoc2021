@@ -1,4 +1,5 @@
-import utils, strutils
+import ./utils
+import std/strutils
 
 type
   Direction = enum

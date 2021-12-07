@@ -1,8 +1,4 @@
-import os
-import macros
-import intsets
-import strutils
-import sequtils
+import std/[os, macros, intsets, strutils, sequtils]
 
 template `?`*[T](cond: bool, yes, no: T): T =
   # x[T] = condition ? valueIfTrue[T] : valueIfFalse[T]

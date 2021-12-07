@@ -1,4 +1,6 @@
-import utils, options, strutils, sequtils, arraymancer
+import ./utils
+import std/[options, strutils, sequtils]
+import arraymancer
 
 type
   ITen = Tensor[int]

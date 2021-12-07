@@ -1,7 +1,5 @@
-import os
 import nake
-import macros
-import strutils
+import std/[os, macros, strutils]
 
 var days: seq[int]
 for f in walkFiles("src/day*"):

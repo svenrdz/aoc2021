@@ -1,4 +1,5 @@
-import utils, sequtils
+import ./utils
+import std/sequtils
 
 proc sum(arr: openArray[int]): int =
   for val in arr:

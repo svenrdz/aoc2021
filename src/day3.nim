@@ -1,4 +1,6 @@
-import utils, math, sequtils, strutils, arraymancer
+import ./utils
+import std/[math, sequtils, strutils]
+import arraymancer
 
 type BTensor = Tensor[int]
 

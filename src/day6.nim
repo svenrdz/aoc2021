@@ -1,4 +1,5 @@
-import utils, strutils, sequtils, tables
+import ./utils
+import std/[strutils, sequtils, tables]
 
 type
   Fishes = Table[int, int]
