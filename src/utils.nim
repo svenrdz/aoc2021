@@ -9,10 +9,13 @@ proc read*(filename: string): seq[string] =
   toSeq(filename.lines)
 
 proc readIntSeq*(filename: string): seq[int] =
-  filename.read.map(parseInt)
+  read(filename).map(parseInt)
 
 proc readIntSet*(filename: string): IntSet =
-  toIntSet(filename.readIntSeq)
+  toIntSet(readIntSeq(filename))
+
+proc readIntSeqCommaSep*(filename: string): seq[int] =
+  read(filename)[0].split(',').map(parseInt)
 
 proc toSet*(str: string): set[char] =
   for ch in str:

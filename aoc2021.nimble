@@ -11,3 +11,4 @@ srcDir        = "src"
 
 requires "nim >= 1.6.0"
 requires "https://github.com/mratsim/Arraymancer >= 0.7.8 & < 1.0.0"
+requires "https://github.com/beef331/kashae >= 0.1.1 & < 1.0.0"
