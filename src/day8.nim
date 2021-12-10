@@ -48,7 +48,7 @@ proc countUniqueLenDigits(displays: seq[Display]): int =
   for display in displays:
     for digit in display.output:
       if digit.len in uniqueLenDigits:
-        result.inc
+        inc result
 
 proc `[]`(solver: Solver, i: int): Digit =
   solver.display.patterns[solver.idxMap[i]]
