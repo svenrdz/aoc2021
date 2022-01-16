@@ -7,7 +7,7 @@ for f in walkFiles("src/day*"):
   days.add day
 
 proc runDay(day: int) =
-  discard shell(nimExe, "r", "--hints:off", "src/day" & $day & ".nim")
+  discard shell(nimExe, "r", "--gc:orc --hints:off", "src/day" & $day & ".nim")
 
 task defaultTask, "Run latest day":
   runDay(max(days))
